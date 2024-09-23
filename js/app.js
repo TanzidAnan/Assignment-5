@@ -19,8 +19,11 @@ document.getElementById('niakhali-Donate-btn').addEventListener('click', functio
 
 
     if (isNaN(niakhaliInputValue)) {
-        alert('Plice Enter Your Number')
+        alert('Invalid Donation amount')
         return;
+    }
+    else if(!(niakhaliInputValue >=0)){
+        alert('Tanzida')
     }
     else {
         const totleBlance = niakhaliInputValue + newNiakhaliBlance;
@@ -32,13 +35,19 @@ document.getElementById('niakhali-Donate-btn').addEventListener('click', functio
             alert(niakhaliInputValue + ' ' + 'Donate for Flood at Noakhali');
             document.getElementById('niakhaliDonateBlance').innerText = totleBlance;
             document.getElementById('totleBlance').innerText = AllBlance - totleBlance;
+            const options = {
+                weekday: 'short', year: 'numeric', month: 'short', day: 'numeric',
+                hour: '2-digit', minute: '2-digit', second: '2-digit',
+                timeZone: 'Asia/Dhaka', timeZoneName: 'long'
+            };
+            const transactionDateTime = new Date().toLocaleString('en-US', options);
 
             const div = document.createElement('div');
             // div.classList.add('');
             div.innerHTML = `
             <div class='bg-[#1111111A] px-10 py-5 rounded-md shadow-sm mb-4'>
-                    <h1 class='text-lg'>${niakhaliInputValue} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
-                    <h1>Date :time</h1>
+                    <h1 class='text-lg font-semibold'>${niakhaliInputValue} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+                    <h1 class='mt-3 font-semibold'>Date :${transactionDateTime}</h1>
             </div>
             `
             document.getElementById('history-section').appendChild(div)
