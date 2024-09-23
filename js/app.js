@@ -29,9 +29,20 @@ document.getElementById('niakhali-Donate-btn').addEventListener('click', functio
             return;
         }
         else {
-            alert(totleBlance + ' ' + 'Donate for Flood at Noakhali');
+            alert(niakhaliInputValue + ' ' + 'Donate for Flood at Noakhali');
             document.getElementById('niakhaliDonateBlance').innerText = totleBlance;
             document.getElementById('totleBlance').innerText = AllBlance - totleBlance;
+
+            const div = document.createElement('div');
+            // div.classList.add('');
+            div.innerHTML = `
+            <div class='bg-[#1111111A] px-10 py-5 rounded-md shadow-sm mb-4'>
+                    <h1 class='text-lg'>${niakhaliInputValue} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+                    <h1>Date :time</h1>
+            </div>
+            `
+            document.getElementById('history-section').appendChild(div)
+
             return;
         }
     }
