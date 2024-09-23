@@ -1,24 +1,24 @@
-document.getElementById('relief-btn').addEventListener('click', function () {
-    const inputvalue = getInputByNumber('relief-input');
-    const carrentNumber = getCrrentInputBy('current-number');
-    const newTotleBlance = totleBlanceById('totleBlance')
+document.getElementById('injured-btn').addEventListener('click',function(){
+    const inputValue =getInputByNumber('injured-Input-Fild');
+    const carrentNumber = getCrrentInputBy('current-Value');
+    const newTotleBlance = totleBlanceById('totleBlance');
 
 
-    if (isNaN(inputvalue)) {
+    if (isNaN(inputValue)) {
         alert('Invalid Donation amount')
     }
-    else if (!(inputvalue >= 0)) {
+    else if (!(inputValue >= 0)) {
         alert('Tanzida')
     }
     else {
-        const totleBlance = inputvalue + carrentNumber;
+        const totleBlance = inputValue + carrentNumber;
         if (newTotleBlance < totleBlance) {
             alert('ablble Thaka');
             return;
         }
         else {
-            alert(inputvalue + " " + "Donate for Flood Relief in Feni,Bangladesh");
-            document.getElementById('current-number').innerText = totleBlance;
+            alert(inputValue + " " + "Aid for Injured in the Quota Movement");
+            document.getElementById('current-Value').innerText = totleBlance;
             document.getElementById('totleBlance').innerText = newTotleBlance - totleBlance;
 
             const time = {
@@ -32,8 +32,8 @@ document.getElementById('relief-btn').addEventListener('click', function () {
             // div.classList.add('');
             div.innerHTML = `
             <div class='bg-[#1111111A] px-10 py-5 rounded-md shadow-sm mb-4'>
-                    <h1 class='text-lg font-semibold'>${inputvalue} Taka is Donate for Flood Relief in Feni,Bangladesh</h1>
-                    <h1 class='mt-3 font-semibold'>Date :${dateTime}</h1>
+                    <h1 class='text-sm lg:text-lg font-semibold'>${inputValue} Taka is Aid for Injured in the Quota Movement</h1>
+                    <h1 class='mt-3 font-semibold '>Date :${dateTime}</h1>
             </div>
             `
             document.getElementById('history-section').appendChild(div)
@@ -43,4 +43,6 @@ document.getElementById('relief-btn').addEventListener('click', function () {
         }
 
     }
+
+
 })
