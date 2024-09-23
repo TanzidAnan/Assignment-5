@@ -6,7 +6,6 @@ document.getElementById('blog-section').addEventListener('click', function () {
 
 const niakhaliDonateBlance = document.getElementById('niakhaliDonateBlance');
 const totleBlanceEl = document.getElementById('totleBlance').innerText;
-console.log(totleBlanceEl.innerText)
 
 document.getElementById('niakhali-Donate-btn').addEventListener('click', function (e) {
     e.preventDefault();

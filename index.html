@@ -41,13 +41,14 @@
             </div>
         </div>
         <div class="pt-3 lg:pt-10 flex justify-center items-center space-x-7 bg-white pb-3">
-            <button class="btn bg-[#B4F461] font-bold px-8">Donation</button>
-            <button class="btn btn-outline px-8">History</button>
+            <button id="donat-btn" class="btn bg-[#B4F461] font-bold px-8">Donation</button>
+            <button id="history-btn" class="btn btn-outline px-8">History</button>
         </div>
     </header>
 
     <main class="mt-60">
-        <!-- card 1 -->
+        <section id="donate-section" class="">
+            <!-- card 1 -->
         <div class="hero">
             <div class="hero-content flex-col shadow-md lg:flex-row rounded-2xl p-7">
                 <div class="text-center lg:text-left">
@@ -122,9 +123,18 @@
                 </div>
             </div>
         </div>
+        </section>
+        <section id="history-section" class="hidden">
+            <h1>Tanzid anan</h1>
+        </section>
     </main>
+
+
+
     <script src="js/modle.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/featacher.js"></script>
+    <!-- <script src="js/modle.js"></script> -->
 </body>
 
 </html>
