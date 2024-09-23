@@ -17,3 +17,9 @@ function getCrrentInputBy(id){
     const currentNumber =parseFloat(currentNumberEl);
     return currentNumber
 }
+
+function totleBlanceById(id){
+    const currentTotleBlanceEl =document.getElementById(id).innerText;
+    const newBlanceTotle =parseFloat(currentTotleBlanceEl);
+    return newBlanceTotle;
+}
