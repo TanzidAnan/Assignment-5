@@ -4,7 +4,8 @@ document.getElementById('blog-section').addEventListener('click', function () {
 
 const niakhaliDonateBlance = document.getElementById('niakhaliDonateBlance');
 const totleBlanceEl = document.getElementById('totleBlance').innerText;
-
+const modle =document.getElementById('my_modal_5');
+console.log(modle)
 
 document.getElementById('niakhali-Donate-btn').addEventListener('click', function (e) {
     e.preventDefault();
@@ -15,7 +16,6 @@ document.getElementById('niakhali-Donate-btn').addEventListener('click', functio
     const niakhaliInputValue = parseFloat(niakaliInputFild);
     const newNiakhaliBlance = parseFloat(niakhaliBlance);
     const AllBlance = parseFloat(totleBlanceEl);
-
 
 
     if (isNaN(niakhaliInputValue)) {
@@ -32,7 +32,8 @@ document.getElementById('niakhali-Donate-btn').addEventListener('click', functio
             return;
         }
         else {
-            alert(niakhaliInputValue + ' ' + 'Donate for Flood at Noakhali');
+            // alert(niakhaliInputValue + ' ' + 'Donate for Flood at Noakhali');
+            modle.classList.remove('hidden')
             document.getElementById('niakhaliDonateBlance').innerText = totleBlance;
             document.getElementById('totleBlance').innerText = AllBlance - totleBlance;
             const options = {
@@ -46,8 +47,8 @@ document.getElementById('niakhali-Donate-btn').addEventListener('click', functio
             // div.classList.add('');
             div.innerHTML = `
             <div class='bg-[#1111111A] px-10 py-5 rounded-md shadow-sm mb-4'>
-                    <h1 class='text-lg font-semibold'>${niakhaliInputValue} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
-                    <h1 class='mt-3 font-semibold'>Date :${transactionDateTime}</h1>
+                    <h1 class='text-sm lg:text-lg font-semibold'>${niakhaliInputValue} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+                    <h1 class='mt-3 font-semibold text-sm lg:text-lg'>Date :${transactionDateTime}</h1>
             </div>
             `
             document.getElementById('history-section').appendChild(div)

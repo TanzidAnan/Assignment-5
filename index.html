@@ -49,84 +49,148 @@
     <main class="mt-60">
         <section id="donate-section" class="">
             <!-- card 1 -->
-        <div class="hero">
-            <div class="hero-content flex-col shadow-md lg:flex-row rounded-2xl p-7">
-                <div class="text-center lg:text-left">
-                    <img src="assets/noakhali.png" alt="">
-                </div>
-                <div class="card  lg:w-[50%]">
-                    <p class="flex justify-start space-x-1 w-40 btn bg-[#B4F461] text-[#111111B3]">
-                        <span><img src="assets/coin.png" alt=""></span>
-                        <span id="niakhaliDonateBlance">0</span>
-                        <span>BDT</span>
-                    </p>
-                    <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
-                    <p class="py-6 text-[#111111B3]">
-                        The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
-                        donation will help provide essential supplies and to those affected by this disaster. Every
-                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
-                        and making a positive impact on the lives of those in need.
-                    </p>
-                    <input id="niakhaliInput" type="text" placeholder="Write Donation Amount"
-                        class="input input-bordered w-full" />
-                    <button id="niakhali-Donate-btn" class="w-full btn bg-[#B4F461] hover:bg-[#B4F461] mt-4">Donate Now</button>
-                </div>
-            </div>
-        </div>
-        <!-- card 2-->
-        <div class="hero mt-10 ">
-            <div class="hero-content flex-col shadow-md lg:flex-row rounded-2xl p-7">
-                <div class="text-center lg:text-left">
-                    <img src="assets/feni.png" alt="">
-                </div>
-                <div class="card  lg:w-[50%]">
-                    <p class="flex justify-start space-x-1 w-40 btn bg-[#B4F461] text-[#111111B3]">
-                        <span><img src="assets/coin.png" alt=""></span>
-                        <span id="current-number">0</span>
-                        <span>BDT</span>
-                    </p>
-                    <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
-                    <p class="py-6 text-[#111111B3]">
-                        The recent floods in Feni have devastated local communities, leading to severe disruption and
-                        loss. Your generous donation will help provide immediate aid, including food, clean water, and
-                        medical supplies, to those affected by this calamity. Together, we can offer crucial support and
-                        help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a
-                        real difference. Please consider donating today to assist those in urgent need.
-                    </p>
-                    <input id="relief-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                    <button id="relief-btn" class="w-full btn bg-[#B4F461] mt-4">Donate Now</button>
+            <div class="hero">
+                <div class="hero-content flex-col shadow-md lg:flex-row rounded-2xl p-7">
+                    <div class="text-center lg:text-left">
+                        <img src="assets/noakhali.png" alt="">
+                    </div>
+                    <div class="card  lg:w-[50%]">
+                        <p class="flex justify-start space-x-1 w-40 btn bg-[#B4F461] text-[#111111B3]">
+                            <span><img src="assets/coin.png" alt=""></span>
+                            <span id="niakhaliDonateBlance">0</span>
+                            <span>BDT</span>
+                        </p>
+                        <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <p class="py-6 text-[#111111B3]">
+                            The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                            donation will help provide essential supplies and to those affected by this disaster. Every
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts
+                            and making a positive impact on the lives of those in need.
+                        </p>
+                        <input id="niakhaliInput" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
+                        <button id="niakhali-Donate-btn" onclick="my_modal_5.showModal()" class="w-full btn bg-[#B4F461] hover:bg-[#B4F461] mt-4">Donate
+                            Now</button>
+                            <!-- Button ============= -->
+                            <dialog id="my_modal_5" class="hidden modal modal-bottom sm:modal-middle">
+                                <div class="modal-box text-center">
+                                    <h3 class="text-2xl lg:text-4xl font-extrabold ">Congrates</h3>
+                                    <div class="flex justify-center">
+                                        <img  class="text-center mt-2 w-[10%]" src="assets/coin.png" alt="">
+                                    </div>
+                                    <p class="py-4">You Have Donated for Humankind</p>
+                                    <h1 class="font-extrabold lg:text-3xl">Successfully</h1>
+                                    <div class="justify-center mt-3">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn font-bold">Close Confirmation</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- card 3 -->
-        <div class="hero mt-10 ">
-            <div class="hero-content flex-col shadow-md lg:flex-row rounded-2xl p-7">
-                <div class="text-center lg:text-left">
-                    <img src="assets/quota-protest.png" alt="">
-                </div>
-                <div class="card  lg:w-[50%]">
-                    <p class="flex justify-start space-x-1 w-40 btn bg-[#B4F461] text-[#111111B3]">
-                        <span><img src="assets/coin.png" alt=""></span>
-                        <span id="current-Value">0</span>
-                        <span>BDT</span>
-                    </p>
-                    <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
-                    <p class="py-6 text-[#111111B3]">
-                        The recent floods in Feni have devastated local communities, leading to severe disruption and
-                        loss. Your generous donation will help provide immediate aid, including food, clean water, and
-                        medical supplies, to those affected by this calamity. Together, we can offer crucial support and
-                        help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a
-                        real difference. Please consider donating today to assist those in urgent need.
-                    </p>
-                    <input id="injured-Input-Fild" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-                    <button id="injured-btn" class="w-full btn bg-[#B4F461] mt-4">Donate Now</button>
+            <!-- card 2-->
+            <div class="hero mt-10 ">
+                <div class="hero-content flex-col shadow-md lg:flex-row rounded-2xl p-7">
+                    <div class="text-center lg:text-left">
+                        <img src="assets/feni.png" alt="">
+                    </div>
+                    <div class="card  lg:w-[50%]">
+                        <p class="flex justify-start space-x-1 w-40 btn bg-[#B4F461] text-[#111111B3]">
+                            <span><img src="assets/coin.png" alt=""></span>
+                            <span id="current-number">0</span>
+                            <span>BDT</span>
+                        </p>
+                        <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                        <p class="py-6 text-[#111111B3]">
+                            The recent floods in Feni have devastated local communities, leading to severe disruption
+                            and
+                            loss. Your generous donation will help provide immediate aid, including food, clean water,
+                            and
+                            medical supplies, to those affected by this calamity. Together, we can offer crucial support
+                            and
+                            help rebuild lives in the aftermath of this disaster. Every contribution counts towards
+                            making a
+                            real difference. Please consider donating today to assist those in urgent need.
+                        </p>
+                        <input id="relief-input" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
+                        <button id="relief-btn" onclick="my_modal_6.showModal()" class="w-full btn bg-[#B4F461] mt-4">Donate Now</button>
+                        <!-- comment============ -->
+                        <dialog id="my_modal_6" class="hidden modal modal-bottom sm:modal-middle">
+                            <div class="modal-box text-center">
+                                <h3 class="text-2xl lg:text-4xl font-extrabold ">Congrates</h3>
+                                <div class="flex justify-center">
+                                    <img  class="text-center mt-2 w-[10%]" src="assets/coin.png" alt="">
+                                </div>
+                                <p class="py-4">You Have Donated for Humankind</p>
+                                <h1 class="font-extrabold lg:text-3xl">Successfully</h1>
+                                <div class="justify-center mt-3">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn font-bold">Close Confirmation</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
+            <!-- card 3 -->
+            <div class="hero mt-10 ">
+                <div class="hero-content flex-col shadow-md lg:flex-row rounded-2xl p-7">
+                    <div class="text-center lg:text-left">
+                        <img src="assets/quota-protest.png" alt="">
+                    </div>
+                    <div class="card  lg:w-[50%]">
+                        <p class="flex justify-start space-x-1 w-40 btn bg-[#B4F461] text-[#111111B3]">
+                            <span><img src="assets/coin.png" alt=""></span>
+                            <span id="current-Value">0</span>
+                            <span>BDT</span>
+                        </p>
+                        <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+                        <p class="py-6 text-[#111111B3]">
+                            The recent floods in Feni have devastated local communities, leading to severe disruption
+                            and
+                            loss. Your generous donation will help provide immediate aid, including food, clean water,
+                            and
+                            medical supplies, to those affected by this calamity. Together, we can offer crucial support
+                            and
+                            help rebuild lives in the aftermath of this disaster. Every contribution counts towards
+                            making a
+                            real difference. Please consider donating today to assist those in urgent need.
+                        </p>
+                        <input id="injured-Input-Fild" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full" />
+                        <button id="injured-btn" onclick="my_modal_7.showModal()" class="w-full btn bg-[#B4F461] mt-4">Donate Now</button>
+                        <!-- modle===== -->
+                        <dialog id="my_modal_7" class="hidden modal modal-bottom sm:modal-middle">
+                            <div class="modal-box text-center">
+                                <h3 class="text-2xl lg:text-4xl font-extrabold ">Congrates</h3>
+                                <div class="flex justify-center">
+                                    <img  class="text-center mt-2 w-[10%]" src="assets/coin.png" alt="">
+                                </div>
+                                <p class="py-4">You Have Donated for Humankind</p>
+                                <h1 class="font-extrabold lg:text-3xl">Successfully</h1>
+                                <div class="justify-center mt-3">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn font-bold">Close Confirmation</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="history-section" class="hidden w-3/4 mx-auto">
             <div id="history-div" class="mt-4">
-                
+
             </div>
         </section>
     </main>
