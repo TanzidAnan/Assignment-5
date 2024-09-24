@@ -15,7 +15,7 @@ document.getElementById('injured-btn').addEventListener('click',function(){
     else {
         const totleBlance = inputValue ;
         if (newTotleBlance < totleBlance) {
-            alert('ablble Thaka');
+            alert('Not Abaleable Blance');
             return;
         }
         else {

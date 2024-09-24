@@ -14,7 +14,7 @@ document.getElementById('relief-btn').addEventListener('click', function () {
     else {
         const totleBlance = inputvalue ;
         if (newTotleBlance < totleBlance) {
-            alert('ablble Thaka');
+            alert('Not Abaleable Blance');
             return;
         }
         else {

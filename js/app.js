@@ -23,12 +23,12 @@ document.getElementById('niakhali-Donate-btn').addEventListener('click', functio
         return;
     }
     else if(!(niakhaliInputValue >=0)){
-        alert('Tanzida')
+        return;
     }
     else {
         const totleBlance = niakhaliInputValue;
         if (AllBlance < totleBlance) {
-            alert('Abable Blance');
+            alert('Not Abaleable Blance');
             return;
         }
         else {
