@@ -13,7 +13,7 @@ document.getElementById('injured-btn').addEventListener('click',function(){
         alert('Tanzida')
     }
     else {
-        const totleBlance = inputValue + carrentNumber;
+        const totleBlance = inputValue ;
         if (newTotleBlance < totleBlance) {
             alert('ablble Thaka');
             return;
@@ -21,7 +21,7 @@ document.getElementById('injured-btn').addEventListener('click',function(){
         else {
             // alert(inputValue + " " + "Aid for Injured in the Quota Movement");
             modle.classList.remove('hidden')
-            document.getElementById('current-Value').innerText = totleBlance;
+            document.getElementById('current-Value').innerText = totleBlance + carrentNumber;
             document.getElementById('totleBlance').innerText = newTotleBlance - totleBlance;
 
             const time = {

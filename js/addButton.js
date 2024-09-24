@@ -12,7 +12,7 @@ document.getElementById('relief-btn').addEventListener('click', function () {
         alert('Tanzida')
     }
     else {
-        const totleBlance = inputvalue + carrentNumber;
+        const totleBlance = inputvalue ;
         if (newTotleBlance < totleBlance) {
             alert('ablble Thaka');
             return;
@@ -20,7 +20,7 @@ document.getElementById('relief-btn').addEventListener('click', function () {
         else {
             // alert(inputvalue + " " + "Donate for Flood Relief in Feni,Bangladesh");
             modle.classList.remove('hidden')
-            document.getElementById('current-number').innerText = totleBlance;
+            document.getElementById('current-number').innerText = totleBlance + carrentNumber;
             document.getElementById('totleBlance').innerText = newTotleBlance - totleBlance;
 
             const time = {
